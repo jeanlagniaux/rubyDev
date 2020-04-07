@@ -1,14 +1,25 @@
-puts "donne ton annee de naissance"
-print "> "
-$user_date = gets.to_i
-$date = $user_date
-$i = 2020
+puts "Quel âge ?"
+age = gets.chomp.to_i
 
-while $user_date <= $i do
-	if($i == $user_date)
-	then puts("il y a #{$i - $user_date} an tu avais la moitier de lage que tu as aujourdh'ui")
-        end
-	puts("il y a  #{$i - $user_date} ans tu avais #{$user_date - $date}")
-        $user_date +=1
+year = 2020 - age
+age2 = age
+i = 0
+
+while year < 2020 do
+if age2 == i then
+        puts "Il y a #{age2} ans, tu avais la moitié de l'âge que tu as aujourd'hui"
+age2 -= 1
+year += 1
+i += 1
+
+else
+
+puts "Il y a #{age2} ans, tu avais #{i} ans"
+
+age2 -= 1
+
+year += 1
+
+i += 1
 end
-
+end
